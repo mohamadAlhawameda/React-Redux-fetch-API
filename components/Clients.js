@@ -25,12 +25,7 @@ const Clients = ({ client, getdata, add, remove }) => {
                 add(user)
             }} title="Add user" />
             <Button color='purple' onPress={() => {
-                const user = {
-                    firstName: " ",
-                    lastName: " ",
-                    userName: " ",
-                }
-                remove(user)
+                remove()
             }} title="Remove" />
             <ScrollView style={styles.scroll}>
             <FlatList style={styles.item} data={client} renderItem={({ item }) => (<Text style={styles.inside}> First name: {item.firstName} || Lats name: {item.lastName} || UserName: {item.userName}</Text>)} />

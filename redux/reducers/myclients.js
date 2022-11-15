@@ -19,8 +19,10 @@ const initialState = {
         }
       }
       case REMOVE_USER: {
+        const tempArray = state.data.map(e => e);
+        tempArray.pop()
         return {
-            data: state.data.filter(datuser => datuser !== action.payload)
+            data: tempArray
         }
       }
       default:

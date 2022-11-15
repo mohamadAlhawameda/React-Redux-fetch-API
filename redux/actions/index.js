@@ -27,9 +27,6 @@ export const add = user =>({
         addus: user
     }
 })
-export const remove = user =>({
+export const remove = () =>({
     type:REMOVE_USER,
-    payload: {
-        removeus: user
-    }
 })
